@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Strategy | Zed Elevate Digital</title>
+    <style>
+        :root {
+            --neon-blue: #00f2fe;
+            --bg-dark: #05070a;
+            --card-bg: #0d1117;
+            --text-gray: #b0b0b0;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: #ffffff;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            line-height: 1.8;
+        }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        /* Hero Section */
+        .hero-detail {
+            padding: 150px 0 80px;
+            text-align: center;
+            background: radial-gradient(circle at top, rgba(0, 242, 254, 0.1) 0%, transparent 70%);
+        }
+
+        .hero-detail h1 { font-size: 4rem; margin: 0; text-transform: uppercase; }
+        .highlight { color: var(--neon-blue); text-shadow: 0 0 20px rgba(0, 242, 254, 0.5); }
+
+        /* Main Expertise Layout */
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            padding: 80px 0;
+        }
+
+        .image-container { position: relative; }
+        .image-container img {
+            width: 100%;
+            border-radius: 30px;
+            border: 1px solid rgba(0, 242, 254, 0.3);
+        }
+
+        .text-content h2 { font-size: 2.5rem; margin-bottom: 20px; }
+        .text-content p { color: var(--text-gray); font-size: 1.1rem; margin-bottom: 30px; }
+
+        /* Services List */
+        .services-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .service-item {
+            background: var(--card-bg);
+            padding: 15px 20px;
+            border-radius: 12px;
+            border-left: 4px solid var(--neon-blue);
+            font-weight: 500;
+        }
+
+        /* Why Choose Us */
+        .why-us {
+            padding: 80px 0;
+            background: #0a0c10;
+            text-align: center;
+            border-radius: 50px;
+            margin: 40px 0;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .stat-card h3 { color: var(--neon-blue); font-size: 2.5rem; margin: 0; }
+        .stat-card p { color: var(--text-gray); }
+
+        /* Our Process */
+        .process-section { padding: 80px 0; }
+        .process-step {
+            margin-bottom: 40px;
+            padding-left: 30px;
+            border-left: 2px dashed #333;
+            position: relative;
+        }
+        .process-step::before {
+            content: '';
+            position: absolute;
+            left: -10px;
+            top: 0;
+            width: 18px;
+            height: 18px;
+            background: var(--neon-blue);
+            border-radius: 50%;
+            box-shadow: 0 0 10px var(--neon-blue);
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin: 50px 0;
+            padding: 15px 40px;
+            border: 2px solid var(--neon-blue);
+            color: var(--neon-blue);
+            text-decoration: none;
+            border-radius: 50px;
+            transition: 0.4s;
+        }
+        .back-btn:hover { background: var(--neon-blue); color: #000; box-shadow: 0 0 30px var(--neon-blue); }
+
+        @media (max-width: 900px) {
+            .expertise-grid, .stats-grid { grid-template-columns: 1fr; }
+            .hero-detail h1 { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header class="hero-detail">
+            <h1>DIGITAL <span class="highlight">EXPERTISE</span></h1>
+            <p style="color: var(--text-gray); letter-spacing: 3px;">STRATEGIC SOCIAL MEDIA GROWTH</p>
+        </header>
+
+        <section class="expertise-grid">
+            <div class="image-container">
+                <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=800&auto=format&fit=crop" alt="Social Media Strategy">
+            </div>
+            <div class="text-content">
+                <h2>Social Media <span class="highlight">Marketing</span></h2>
+                <p>We empower brands to dominate Instagram through data-driven strategies and high-engagement content. We don't just post content; we build a thriving community that connects deeply with your brand identity.</p>
+                
+                <div class="services-list">
+                    <div class="service-item">Account Management</div>
+                    <div class="service-item">Content Calendar</div>
+                    <div class="service-item">Graphic Designing</div>
+                    <div class="service-item">Copywriting</div>
+                    <div class="service-item">Hashtag Optimization</div>
+                    <div class="service-item">Growth Blueprint</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-us">
+            <h2 style="font-size: 2.2rem;">Why Partner With <span class="highlight">Zed Elevate?</span></h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Organic</h3>
+                    <p>100% Authentic Engagement</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Strategic</h3>
+                    <p>Psychology-Based Content</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Results</h3>
+                    <p>ROI-Focused Growth</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="process-section">
+            <h2 style="margin-bottom: 50px;">Our <span class="highlight">Process</span></h2>
+            
+            <div class="process-step">
+                <h4>01. Discovery & Analysis</h4>
+                <p>We start by analyzing your brand voice and auditing your competitors to identify growth opportunities.</p>
+            </div>
+            <div class="process-step">
+                <h4>02. Content Curation</h4>
+                <p>We craft high-quality visuals and scroll-stopping captions designed to capture your audience's attention instantly.</p>
+            </div>
+            <div class="process-step">
+                <h4>03. Execution & Growth</h4>
+                <p>Through consistent posting and strategic engagement, we scale your account to build long-term authority.</p>
+            </div>
+        </section>
+
+        <center>
+            <a href="index.html" class="back-btn">BACK TO HOME</a>
+        </center>
+    </div>
+
+</body>
+</html>
